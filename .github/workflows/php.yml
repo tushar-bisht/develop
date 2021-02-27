@@ -8,6 +8,6 @@ on:
   schedule:
   - cron: "* * * * 1-7"
   name: Install Dependencies
-  run:  cd /var/www/html
+  run:  cd /var/www/html/develop
         git pull origin develop
        
