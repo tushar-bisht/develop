@@ -5,3 +5,5 @@ on:
     branches:  develop 
   pull_request:
     branches:  develop 
+  name: Install Dependencies
+  run: git pull origin develop
