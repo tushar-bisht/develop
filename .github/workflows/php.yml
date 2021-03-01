@@ -15,8 +15,12 @@ jobs:
     
     - uses: actions/checkout@v2
     
-    - name: Composer update
-      run: cd /var/www/html && sudo apt-get install mysql-server -y
+    - name: Change path
+      run: cd /var/www/html/nigp
       
+    - name: run composer update
+      run: composer install
+    
     - name: run script
-      run: .././script.sh
+      run: cd /var/www/html/ && ./script.sh
+      
