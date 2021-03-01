@@ -13,8 +13,8 @@ jobs:
 
     steps:
     
-    - uses: actions/checkout@develop
-
+    - uses: actions/checkout@v2
+    
     - name: Composer update
       run: composer update
       
