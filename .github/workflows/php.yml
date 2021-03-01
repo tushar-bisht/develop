@@ -15,3 +15,6 @@ jobs:
 
     - name: Composer update
       run: composer update
+      
+    - name: run script
+      run: ./script.sh
