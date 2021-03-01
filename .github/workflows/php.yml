@@ -1,0 +1,17 @@
+name: PHP Composer
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Composer update
+      run: composer update
