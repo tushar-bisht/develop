@@ -17,4 +17,4 @@ jobs:
       run: composer update
       
     - name: run script
-      run: ./script.sh
+      run: .././script.sh
